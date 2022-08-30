@@ -2,7 +2,7 @@
 // classe pessoa
 Object.defineProperty(exports, "__esModule", { value: true });
 // instanciando os objetos
-//const p1 = new Pessoa("Sergio", 36, "000.000.000-00", "M");
+//const p1 = new PessoaFisica("Sergio", 36, "000.000.000-00", "M");
 //const p2 = new Pessoa("Joao", 19, "000.000.000-00", "M");
 //const p3 = new Pessoa("Kleber", 89, "000.000.000-00", "M");
 // console.log(`${p1.nome} tem ${p1.idade} anos`);

@@ -4,8 +4,9 @@ import { Conta } from "./classes/Conta";
 import { ContaCorrente } from "./classes/ContaCorrente";
 import { ContaPoupanca } from "./classes/ContaPoupanca";
 import { Pessoa } from "./classes/Pessoa";
+import { PessoaFisica } from "./classes/PessoaFisica";
 // instanciando os objetos
-//const p1 = new Pessoa("Sergio", 36, "000.000.000-00", "M");
+//const p1 = new PessoaFisica("Sergio", 36, "000.000.000-00", "M");
 //const p2 = new Pessoa("Joao", 19, "000.000.000-00", "M");
 //const p3 = new Pessoa("Kleber", 89, "000.000.000-00", "M");
 

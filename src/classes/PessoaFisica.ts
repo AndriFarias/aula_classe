@@ -1,9 +1,9 @@
 import { Pessoa } from "./Pessoa";
 
 export class PessoaFisica extends Pessoa {
-    cpf:string;
-    dataNascimento: string;
-    sexo:string;
+    private cpf:string;
+    private dataNascimento: string;
+    private sexo:string;
 
 
     constructor(nome:string,endereco:string,telefone:string, cpf:string,

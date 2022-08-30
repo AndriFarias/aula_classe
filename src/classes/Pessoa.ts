@@ -4,10 +4,10 @@ export class Pessoa {
     // atributos da classe pessoa
 
 
-    nome: string;
-    endereco:string;
-    telefone:string;
-    tipo: TipoPessoa;
+    private nome: string;
+    private endereco:string;
+    private telefone:string;
+    private tipo: TipoPessoa;
     
 
     // metodo construtor

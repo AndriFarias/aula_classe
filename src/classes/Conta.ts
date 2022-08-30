@@ -4,11 +4,11 @@ type TipoConta = "Corrente" | "Poupança";
 
 
 export class Conta {
-    agencia: number;
-    numero: number;
-    cliente: Pessoa;
-    saldo: number = 0;
-    tipo: TipoConta;
+    private agencia: number;
+    private numero: number;
+    private cliente: Pessoa;
+    protected saldo: number = 0;
+    private tipo: TipoConta;
 
     constructor(agencia: number, numero: number, cliente: Pessoa, tipo: TipoConta) {
         this.agencia = agencia;
