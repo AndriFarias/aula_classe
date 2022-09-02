@@ -20,7 +20,7 @@ var Conta_1 = require("./Conta");
 var ContaPoupanca = /** @class */ (function (_super) {
     __extends(ContaPoupanca, _super);
     function ContaPoupanca(agencia, numero, cliente, valor) {
-        var _this = _super.call(this, agencia, numero, cliente, "Poupança") || this;
+        var _this = _super.call(this, agencia, numero, cliente) || this;
         _this.depositar(valor);
         return _this;
     }

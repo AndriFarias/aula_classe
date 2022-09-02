@@ -20,12 +20,27 @@ var Pessoa_1 = require("./Pessoa");
 var PessoaFisica = /** @class */ (function (_super) {
     __extends(PessoaFisica, _super);
     function PessoaFisica(nome, endereco, telefone, cpf, dataNascimento, sexo) {
-        var _this = _super.call(this, nome, endereco, telefone, "Fisica") || this;
+        var _this = _super.call(this, nome, endereco, telefone) || this;
         _this.cpf = cpf;
         _this.dataNascimento = dataNascimento;
         _this.sexo = sexo;
         return _this;
     }
+    PessoaFisica.prototype.obterCpf = function () {
+        return this.cpf;
+    };
+    PessoaFisica.prototype.obterDataNascimento = function () {
+        return this.dataNascimento;
+    };
+    PessoaFisica.prototype.atribuirDataNascimento = function (data) {
+        this.dataNascimento = data;
+    };
+    PessoaFisica.prototype.obterSexo = function () {
+        return this.sexo;
+    };
+    PessoaFisica.prototype.atribuirSexo = function (sexo) {
+        this.sexo = sexo;
+    };
     return PessoaFisica;
 }(Pessoa_1.Pessoa));
 exports.PessoaFisica = PessoaFisica;

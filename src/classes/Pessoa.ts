@@ -7,17 +7,41 @@ export class Pessoa {
     private nome: string;
     private endereco:string;
     private telefone:string;
-    private tipo: TipoPessoa;
+    
     
 
     // metodo construtor
-    constructor(nome: string, endereco:string,telefone:string, tipo:TipoPessoa) {
+    constructor(nome: string, endereco:string,telefone:string) {
         // this referencia o objeto em questao
         this.nome = nome;
         this.endereco = endereco;
         this.telefone = telefone;
-        this.tipo = tipo;
         
+        
+    }
+
+    obterNome():string{
+        return this.nome;
+    }
+
+    atribuirNome(nome: string):void{
+        this.nome = nome;
+    }
+
+    obterEndereco():string{
+        return this.endereco;
+    }
+
+    atribuirEndereco(endereco: string):void{
+        this.endereco
+    }
+
+    obterTelefone():string{
+        return this.telefone;
+    }
+
+    atribuirTelefone(telefone:string):void{
+        this.telefone = telefone;
     }
 
    /* fazerAniversario() {

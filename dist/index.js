@@ -1,8 +1,10 @@
 "use strict";
 // classe pessoa
 Object.defineProperty(exports, "__esModule", { value: true });
+var Banco_1 = require("./classes/Banco");
+var PessoaFisica_1 = require("./classes/PessoaFisica");
 // instanciando os objetos
-//const p1 = new PessoaFisica("Sergio", 36, "000.000.000-00", "M");
+var p1 = new PessoaFisica_1.PessoaFisica("Sergio", "", "", "000.000.000-00", "", "M");
 //const p2 = new Pessoa("Joao", 19, "000.000.000-00", "M");
 //const p3 = new Pessoa("Kleber", 89, "000.000.000-00", "M");
 // console.log(`${p1.nome} tem ${p1.idade} anos`);
@@ -31,3 +33,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 //c3.mostrarSaldo();
 //const cc1 = new ContaCorrente(123,555,p1);
 //const cp1 = new ContaPoupanca(311,888,p2,80);
+//console.log(cc1 instanceof ContaCorrente);
+var b1 = new Banco_1.Banco("Xubank", "2010-10-20");
+b1.nome = '';
+console.log(b1);

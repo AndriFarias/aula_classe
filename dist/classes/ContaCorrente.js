@@ -20,15 +20,15 @@ var Conta_1 = require("./Conta");
 var ContaCorrente = /** @class */ (function (_super) {
     __extends(ContaCorrente, _super);
     function ContaCorrente(agencia, numero, cliente) {
-        return _super.call(this, agencia, numero, cliente, "Corrente") || this;
+        return _super.call(this, agencia, numero, cliente) || this;
     }
     ContaCorrente.prototype.sacar = function (valor) {
         if (this.saldo >= valor) {
             this.saldo -= valor;
-            this.aplcarTxDeSaque(valor);
+            this.aplicarTxDeSaque(valor);
         }
     };
-    ContaCorrente.prototype.aplcarTxDeSaque = function (valor) {
+    ContaCorrente.prototype.aplicarTxDeSaque = function (valor) {
         var tx = 0.01;
         this.saldo = this.saldo - (valor * tx);
     };

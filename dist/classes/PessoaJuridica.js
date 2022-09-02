@@ -20,11 +20,23 @@ var Pessoa_1 = require("./Pessoa");
 var PessoaJuridica = /** @class */ (function (_super) {
     __extends(PessoaJuridica, _super);
     function PessoaJuridica(nome, endereco, telefone, cnpj, dataAbertura) {
-        var _this = _super.call(this, nome, endereco, telefone, "Juridica") || this;
+        var _this = _super.call(this, nome, endereco, telefone) || this;
         _this.cnpj = cnpj;
         _this.dataAbertura = dataAbertura;
         return _this;
     }
+    PessoaJuridica.prototype.obterCnpj = function () {
+        return this.cnpj;
+    };
+    PessoaJuridica.prototype.atribuirCnpj = function (cnpj) {
+        this.cnpj = cnpj;
+    };
+    PessoaJuridica.prototype.obterDataAbertura = function () {
+        return this.dataAbertura;
+    };
+    PessoaJuridica.prototype.atribuirDataAbertura = function (data) {
+        this.dataAbertura = data;
+    };
     return PessoaJuridica;
 }(Pessoa_1.Pessoa));
 exports.PessoaJuridica = PessoaJuridica;

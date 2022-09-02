@@ -8,14 +8,38 @@ export class Conta {
     private numero: number;
     private cliente: Pessoa;
     protected saldo: number = 0;
-    private tipo: TipoConta;
+    
 
-    constructor(agencia: number, numero: number, cliente: Pessoa, tipo: TipoConta) {
+    constructor(agencia: number, numero: number, cliente: Pessoa) {
         this.agencia = agencia;
         this.numero = numero;
         this.cliente = cliente;
-        this.tipo = tipo;
+    
 
+    }
+
+    get obterCliente():Pessoa{
+        return this.cliente;
+    }
+
+    set atribuirCliente(cliente:Pessoa){
+        this.cliente = cliente;
+    }
+
+    obterAgencia():number{
+        return this.agencia;
+    }
+
+    atribuirAgencia(ag :number):void{
+        this.agencia = ag;
+    }
+
+    obterNumero():number{
+        return this.numero;
+    }
+
+    atribuirNumero(num:number):void{
+        this.numero = num;
     }
 
     depositar(valor: number): void {
